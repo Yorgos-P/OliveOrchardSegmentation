@@ -1,0 +1,4 @@
+# label:color_rgb:parts:actions
+background:0,0,0::
+ignore_region:66,193,150::
+tree-crown:217,3,216::
