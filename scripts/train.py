@@ -13,7 +13,7 @@ import torch.optim as optim
 
 
 
-def train(train_ds = OliveOrchard('training', transform = train_transforms()), val_ds = OliveOrchard('val', transform = val_transforms()), batch_size = 8, lr = 1e-4, num_epochs = 40, device="cuda" if torch.cuda.is_available() else "cpu",
+def train(train_ds = OliveOrchard('training', transform = train_transforms()), val_ds = OliveOrchard('val', transform = val_transforms()), batch_size = 8, lr = 1e-4, num_epochs = 40, device="cuda",
     checkpoint_path="checkpoints/unet_best.pth"):
 
     training_set = DataLoader(train_ds, batch_size = batch_size, shuffle = True)
@@ -33,7 +33,7 @@ def train(train_ds = OliveOrchard('training', transform = train_transforms()), v
     print("Training Completed")
     return model 
 
-train(train_ds = OliveOrchard('training', transform = train_transforms()), val_ds = OliveOrchard('val', transform = val_transforms()), batch_size = 8, lr = 1e-4, num_epochs = 40, device="cuda" if torch.cuda.is_available() else "cpu",
+train(train_ds = OliveOrchard('training', transform = train_transforms()), val_ds = OliveOrchard('val', transform = val_transforms()), batch_size = 8, lr = 1e-4, num_epochs = 40, device="cuda",
     checkpoint_path="checkpoints/unet_best.pth")
 
 
