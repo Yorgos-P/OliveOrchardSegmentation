@@ -1,0 +1,11 @@
+torch
+torchvision
+opencv-python
+segmentation-models-pytorch
+deepchecks
+deepchecks[vision]
+tqdm
+pillow
+numpy
+scikit-learn
+imagehash
